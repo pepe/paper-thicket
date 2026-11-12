@@ -86,15 +86,15 @@
   (string "\"" (->> s (string/replace-all "\\" "\\\\") (string/replace-all "\"" "\\\"")) "\""))
 
 (defn css [title version]
-  (def head (string/ascii-upper title))
-  (def right (string (if version (string "DRAFT " (string/ascii-upper version) " · ") "")
-                     "READING EDITION · NOT FOR CIRCULATION"))
+  (def head title)
+  (def right (string (if version (string "Draft " version " · ") "")
+                     "Reading edition · Not for circulation"))
   (string
     ```
 @page {
   size: 157mm 210mm; margin: 15mm 44mm 15mm 12mm;
-  @top-left { content: ``` (css-string head) ```; font-family: 'DejaVu Sans', Verdana, sans-serif; font-size: 6.5pt; color: #555; }
-  @top-right { content: ``` (css-string right) ```; font-family: 'DejaVu Sans', Verdana, sans-serif; font-size: 6.5pt; color: #555; }
+  @top-left { content: ``` (css-string head) ```; font-family: 'DejaVu Sans', Verdana, sans-serif; font-size: 6.5pt; color: #555; text-transform: uppercase; }
+  @top-right { content: ``` (css-string right) ```; font-family: 'DejaVu Sans', Verdana, sans-serif; font-size: 6.5pt; color: #555; text-transform: uppercase; }
   @bottom-center { content: counter(page) " / " counter(pages); font-family: 'DejaVu Sans', Verdana, sans-serif; font-size: 7pt; color: #555; }
 }
 html { font-family: 'Liberation Serif', 'Times New Roman', 'DejaVu Serif', serif; font-size: 10.2pt; line-height: 1.38; color: #111; }
