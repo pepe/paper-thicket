@@ -29,7 +29,7 @@
 
 ## Workflow
 
-1. The author writes `paper.md` and decides. Only the author commits to `main`.
+1. The author writes `paper.md` and decides. Only the author commits to `main`, or a tool acting on his explicit instruction under his identity, with `Drafted-by:` naming the tool (for example, the initialization commit made by `/new-paper`).
 2. Language corrections come on `edit/<yyyy-mm-dd>-<scope>` branches: grammar, spelling and punctuation only.
 3. Reviews are files in `reviews/`. They never edit the paper.
 4. Commits carry trailers: `Words:`, `Drafted-by:`, `Reviewed-by:`, `Refs:`.

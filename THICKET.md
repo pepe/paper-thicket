@@ -46,6 +46,8 @@ The `/new-paper` skill does this. By hand:
    - It does not commit and does not touch Git configuration or remotes.
 4. One commit: `Initialize paper: <title>`.
 
+Only the author commits to `main`, or a tool acting on his explicit instruction under his identity, with `Drafted-by:` naming the tool (for example, the initialization commit made by `/new-paper`).
+
 Placeholders in templates: `{{title}}`, `{{subtitle}}`, `{{slug}}`, `{{author}}`, `{{language}}`, `{{kind}}`, `{{date}}`, `{{date_long}}` (`12 November 2026`) and `{{thicket_version}}` (the scaffold's commit).
 `{{name}}` inserts plain text; `{{name|q}}` inserts a double-quoted string, valid both in YAML and in JDN.
 An empty value drops the whole line, except for `{{name|q}}` in `.jdn` files, which renders as `nil`.

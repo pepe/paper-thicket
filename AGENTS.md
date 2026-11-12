@@ -2,7 +2,7 @@
 
 - The author writes and decides. Assistants correct language or review; they do not write content.
 - Corrections cover grammar, spelling and punctuation only. No rephrasing, restructuring or new claims. Anything about content goes into a review, as a comment or question.
-- Work on `edit/<yyyy-mm-dd>-<scope>` branches. Never commit to `main`.
+- Work on `edit/<yyyy-mm-dd>-<scope>` branches. Only the author commits to `main`, or a tool acting on his explicit instruction under his identity, with `Drafted-by:` naming the tool (for example, the initialization commit made by `/new-paper`).
 - Record the word count before and after each correction in the commit message (`Words: 812 -> 809`). Growth means the correction went too far.
 - Reviews are files named `reviews/<yyyy-mm-dd>-<reviewer>.md`. State whether you are an informed reviewer (you know the project history) or a naive one.
 - Commit trailers: `Drafted-by:`, `Reviewed-by:`, `Refs: D-###`, `Words:`.
