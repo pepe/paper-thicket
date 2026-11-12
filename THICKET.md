@@ -72,4 +72,6 @@ When a skill changes, both copies are updated.
 ## Updates
 
 A paper takes scaffold updates with `git pull thicket main`.
+`:thicket-version` in `paper.jdn` and the Scaffold row in `README.md` record the scaffold version the paper was initialized from; they are not updated on later pulls.
+Git history records each scaffold update the paper has taken.
 Templates change only here; existing papers are not regenerated.

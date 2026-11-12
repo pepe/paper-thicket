@@ -12,3 +12,4 @@
 - Do not read or commit anything in `private/` unless the author asks.
 - Scripts are written in Janet.
 - Scaffold files (`*.janet`, `templates/`, `skills/`, `THICKET.md`, `AGENTS.md`, `.gitignore`, `.gitattributes`) come from paper-thicket. Change them there, not in a paper.
+- If the workspace forbids deleting files, git cannot work cleanly there. Write files only and leave branching, commits and merges to the author.
