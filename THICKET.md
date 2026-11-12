@@ -15,6 +15,7 @@ Scripts are written in Janet; nothing beyond Janet's standard library and `git` 
 | `words.janet` | Word count of a Markdown file: `janet words.janet paper.md` |
 | `reading-edition.janet` | Reading edition PDF: `janet reading-edition.janet paper.md build/<name>.pdf` |
 | `templates/` | The files `init.janet` renders into the paper's root |
+| `skills/` | The `new-paper` skill, one folder per agent |
 
 Bibliographic metadata (title, subtitle, author, date, language, bibliography) goes in the YAML front matter of `paper.md`.
 Workflow state (slug, kind, status, scaffold version, venue, submission and publication records) goes in `paper.jdn`.
@@ -51,6 +52,21 @@ Only the author commits to `main`, or a tool acting on his explicit instruction 
 Placeholders in templates: `{{title}}`, `{{subtitle}}`, `{{slug}}`, `{{author}}`, `{{language}}`, `{{kind}}`, `{{date}}`, `{{date_long}}` (`12 November 2026`) and `{{thicket_version}}` (the scaffold's commit).
 `{{name}}` inserts plain text; `{{name|q}}` inserts a double-quoted string, valid both in YAML and in JDN.
 An empty value drops the whole line, except for `{{name|q}}` in `.jdn` files, which renders as `nil`.
+
+## Installing the skills
+
+The `new-paper` skill runs the dialogue for making a paper.
+Each agent has its own version:
+
+- **Claude Code:** copy `skills/claude/new-paper/` to `~/.claude/skills/new-paper/`.
+- **Codex:** follow the installation notes in `skills/codex/new-paper/`.
+
+The contract between the skills and the scaffold is `init.janet` as documented here.
+The skills are only the dialogue on top of it; if they disagree, this file wins.
+
+The copies in this repository are for others.
+The author's own copies are managed in his accounts.
+When a skill changes, both copies are updated.
 
 ## Updates
 

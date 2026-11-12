@@ -11,4 +11,4 @@
 - Keep provenance: do not overwrite imported or historical material; put new interpretation in separate notes.
 - Do not read or commit anything in `private/` unless the author asks.
 - Scripts are written in Janet.
-- Scaffold files (`*.janet`, `templates/`, `THICKET.md`, `AGENTS.md`, `.gitignore`, `.gitattributes`) come from paper-thicket. Change them there, not in a paper.
+- Scaffold files (`*.janet`, `templates/`, `skills/`, `THICKET.md`, `AGENTS.md`, `.gitignore`, `.gitattributes`) come from paper-thicket. Change them there, not in a paper.

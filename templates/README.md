@@ -25,7 +25,7 @@
 | `readings/` | Reading editions worth keeping |
 | `private/` | Not in Git: chat exports, participant data |
 | `build/` | Not in Git: generated output |
-| `*.janet`, `templates/`, `THICKET.md`, `AGENTS.md` | Scaffold from paper-thicket; update with `git pull thicket main` |
+| `*.janet`, `templates/`, `skills/`, `THICKET.md`, `AGENTS.md` | Scaffold from paper-thicket; update with `git pull thicket main` |
 
 ## Workflow
 
