@@ -7,7 +7,7 @@
 | Author | {{author}} |
 | Kind | {{kind}} |
 | Language | {{language}} |
-| Status | concept |
+| Status | see `paper.jdn` |
 | Created | {{date}} |
 | Scaffold | paper-thicket `{{thicket_version}}` |
 
