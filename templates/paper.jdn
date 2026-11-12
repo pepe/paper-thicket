@@ -1,0 +1,13 @@
+# Workflow state of this paper (Janet data).
+# Bibliographic metadata (title, author, date, language) is in the front matter of paper.md.
+{:schema-version 1
+ :slug {{slug|q}}
+ :kind :{{kind}}
+ :status :concept
+ :created {{date|q}}
+ :thicket-version {{thicket_version|q}}
+ :telos "TELOS.md"
+ :venue nil
+ :submitted-on nil
+ :published-on nil
+ :doi nil}
