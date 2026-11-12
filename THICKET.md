@@ -60,6 +60,7 @@ Each agent has its own version:
 
 - **Claude Code:** copy `skills/claude/new-paper/` to `~/.claude/skills/new-paper/`.
 - **Codex:** follow the installation notes in `skills/codex/new-paper/`.
+- **Copilot CLI:** follow the installation notes in `skills/copilot/new-paper/`.
 
 The contract between the skills and the scaffold is `init.janet` as documented here.
 The skills are only the dialogue on top of it; if they disagree, this file wins.
