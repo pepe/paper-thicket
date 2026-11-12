@@ -1,0 +1,19 @@
+# Private material and generated output
+/private/
+/build/
+
+# Credentials and local settings
+.env
+.env.*
+*.pem
+*.key
+
+# Temporary and editor files
+/tmp/
+*.tmp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
